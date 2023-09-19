@@ -1,6 +1,6 @@
 Overview
 --------
-blobs is a p5.js sketch that creates two animated blobs (referred to as "blob1" and "blob2") on a canvas. Each blob is made up of multiple nodes that move around, leaving a trail behind. 
+blobs is a p5.js sketch that creates two animated, colored blobs (referred to as "blob1" and "blob2") on a canvas. Each blob is made up of multiple nodes that move around, leaving a colored trail behind. The blobs bounce off the edges of the canvas when colliding with its boundaries, adding an element of unpredictability.
 
   Description of blobs
   --------------------

@@ -4,9 +4,10 @@ blobs is a p5.js sketch that creates two animated blobs (referred to as "blob1" 
 
   Description of blobs
   --------------------
-  = "blob1" and "blob2" spawn randomly on the canvas, move in different directions, and (can) move at different speeds. 
-  = the blobs' colors are generated randomly
-  = they will pass through each other
+  - The blobs are composed of multiple nodes connected by curves, and these nodes move based on sinusoidal functions, angles, and frequencies.
+  - "blob1" and "blob2" spawn randomly on the canvas, move in different directions, and (can) move at different speeds. 
+  - the blobs' colors are generated randomly
+  - they will pass through each other
 
 
 Usage

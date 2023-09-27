@@ -1,0 +1,8 @@
+LAB 1 NOTES:
+
+- Turn on SSH on raspberry pi via ‘Raspberry Pi Configuration” at the top left tool bar
+- Create a ‘CPSC334’ folder within ‘student334’
+- Create a ‘raspberrypi’ folder within ‘CPSC334’
+- Use ‘nano get_ip.sh’ within the ‘raspberrypi’ folder to write the get_ip script
+    - Allow executable privileges on the file
+- Follow these steps for ssh key generation: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent

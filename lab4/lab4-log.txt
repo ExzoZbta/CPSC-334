@@ -1,0 +1,81 @@
+Lab Procedures:
+
+1. Downloaded and installed ESP323 and Arduino IDE
+2. Connected Rasp Pi to ESP32 
+got stuck when trying to get serial data to send out from Rasp Pi; realized that there was an import & double file name issue
+3. Programmed joy stick and buttons to work on laptop using Arduino IDE and code found in Arduino documentation
+4. Uploaded above code to ESP32 board, plugged everything into Rasp Pi to make sure it works
+5. Success!
+
+
+Code:
+
+getent group dialout to check permissions
+
+
+
+
+import serial
+
+serial_port = '/dev/ttyUSB0'
+baud_rate = 9600
+
+try:
+ser = serial.Serial(serial_port, baud_rate)
+while True:
+data = ser.readline().decode('ascii').strip()
+print(data)
+
+except KeyboardInterrupt:
+print("Serial communication stopped.")
+
+except Exception as e:
+print(f"An error occurred: {str(e)}")
+
+finally:
+if ser.is_open:
+ser.close()
+
+
+
+for joystick:
+/*
+* This ESP32 code is created by esp32io.com
+*
+* This ESP32 code is released in the public domain
+*
+* For more detail (instruction and wiring diagram), visit https://esp32io.com/tutorials/esp32-joystick
+*/
+
+
+#define VRX_PIN 36 // ESP32 pin GPIO36 (ADC0) connected to VRX pin
+#define VRY_PIN 39 // ESP32 pin GPIO39 (ADC0) connected to VRY pin
+
+
+int valueX = 0; // to store the X-axis value
+int valueY = 0; // to store the Y-axis value
+
+
+void setup() {
+Serial.begin(9600) ;
+}
+
+
+void loop() {
+// read X and Y analog values
+valueX = analogRead(VRX_PIN);
+valueY = analogRead(VRY_PIN);
+
+
+// print data to Serial Monitor on Arduino IDE
+Serial.print("x = ");
+Serial.print(valueX);
+Serial.print(", y = ");
+Serial.println(valueY);
+delay(200);
+}
+
+
+
+resources
+https://esp32io.com/tutorials/esp32-button 

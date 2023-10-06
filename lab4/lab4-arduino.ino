@@ -10,7 +10,7 @@ int valueY = 0; // to store the Y-axis value
 
 void setup() {
   Serial.begin(9600);
-  // initialize the pushbutton pin as an pull-up input
+  // Initialize the pushbutton pin as a pull-up input
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(SWITCH_PIN, INPUT_PULLUP);
 

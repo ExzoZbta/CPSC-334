@@ -5,7 +5,7 @@ Overview
   Description of 'Emotion Waves'
   ------------------------------
   - The user is greeted with a screen asking "Select the most prominent emotion you've felt recently."
-  - The list of emotions includes: "Sadness" "Joy" "Anger" "Surprise"
+  - The list of emotions includes: `rgb(9, 105, 218)` "Sadness" "Joy" "Anger" "Surprise"
   - When the user is satisfied with their choice, flicking the lever on brings up a screen with the appropriately colored Perlin noise-generated wave on a black background.
   - On this screen, the user can manipulate the wave using the joystick. The wave moves on its own without user input.
   - The wave moves on its own without user input.    
@@ -31,9 +31,11 @@ esp32 Usage:
     Button Usage (esp32)
     --------------
     Using the button:
-              - A singular press of the button will switch to the next emotion in the list of emotions on the emotion (starting screen)
+              - A singular press of the button will switch to the next emotion in the list of emotions on the emotion 
+              (starting screen)
               - The user can hold down the button to quickly go through the list (just a possibility)
-              - On the Perlin noise-generated wave screen, pressing the button can change the emotion (thus, the color of the wave) without having to go back to the emotion screen 
+              - On the Perlin noise-generated wave screen, pressing the button can change the emotion 
+              (thus, the color of the wave) without having to go back to the emotion screen 
  
 For Raspberry Pi:
 - 

@@ -5,14 +5,15 @@ Overview
   Description of 'Emotion Waves'
   ------------------------------
   - The user is greeted with a screen asking "Select the most prominent emotion you've felt recently."
-  - The list of emotions includes: `rgb(9, 105, 218)` "Sadness" "Joy" "Anger" "Surprise"
+  - The list of emotions includes: "Sadness" "Joy" "Anger" "Surprise"
+    - each emotion has its corresponding color
   - When the user is satisfied with their choice, flicking the lever on brings up a screen with the appropriately colored Perlin noise-generated wave on a black background.
   - On this screen, the user can manipulate the wave using the joystick. The wave moves on its own without user input.
   - The wave moves on its own without user input.    
   - The user can return to the starting screen and start anew by flicking the lever off.
 
 
-esp32 Usage:
+## esp32 Usage:
 
     Joystick Usage (esp32)
     --------------

@@ -11,7 +11,7 @@ Overview
   - The wave moves on its own without user input.    
   - The user can return to the starting screen and start anew by flicking the lever off.
 
-**esp32 Usage:**
+esp32 Usage:
     Joystick Usage (esp32)
     --------------
     Using the joystick:

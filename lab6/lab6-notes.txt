@@ -1,0 +1,26 @@
+Photoresistor Circuit Diagram:
+https://www.instructables.com/How-to-use-a-photoresistor-or-photocell-Arduino-Tu/
+
+
+Wifi:
+https://randomnerdtutorials.com/esp32-useful-wi-fi-functions-arduino/#3
+
+Sending UDP packets on esp32:
+https://gist.github.com/santolucito/4016405f54850f7a216e9e453fe81803
+
+
+Richard needed to calibrate his photoresistor with a 330ohm resistor to get readings that would work for this room 
+
+
+Processing:
+We want to use this UDP library: https://ubaa.net/shared/processing/udp/
+Installing library via Processing IDE would not work, had to manually download zip and move to correct folder
+
+Wireless Communication Issues:
+Darwin wasn’t receiving data because of firewall issues (Linux)
+Needed to open a UDP port in firewall to allow the packets through to laptop 
+Richard needed to put laptop ip address + the port in the arduino code (loop portion) but his firewall settings were fine (Mac)
+
+
+172.29.129.145
+

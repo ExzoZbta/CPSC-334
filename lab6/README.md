@@ -1,8 +1,7 @@
 # Lab 6
 
 Used:
-- 28BYJ-48 Step Motor + ULN2003 Driver board
-- MG90S Micro Servo Motor
+- Photoresistor (ambient light sensor)
 
 lab6.ino
 --------

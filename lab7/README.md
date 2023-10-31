@@ -12,3 +12,8 @@ lab7.ino
 lab7-notes.txt
 --------------
 - Shared notes between me and Anand—circuit diagram included.
+
+
+lab7-diagram.jpg
+--------------
+- Circuit diagram of the esp32 + breadboard w/ servo motor + step motor/driver board

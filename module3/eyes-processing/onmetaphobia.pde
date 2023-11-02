@@ -8,9 +8,12 @@ PImage backgroundImage;
 ArrayList<Eye> eyes = new ArrayList<Eye>();
 String lightMessage = "";
 String touchMessage = "";
-int touchThreshold = 35;
+String touch2_Message = "";
+int touchThreshold = 54;
 int touchTimer = 0;
 int maxEyes = 20;
+int eyeRemovalInterval = 60 * 60; // 60 seconds
+int lastEyeRemovalTime = 0;
 
 void setup() {
   udp = new UDP(this, 4200);
@@ -21,7 +24,6 @@ void setup() {
   noStroke();
   eyes.add(new Eye(250, 16, 120)); // Add the initial eye
 
-  // Load the background image from the data folder
   backgroundImage = loadImage("background.jpg"); // replace with your desired image
 }
 
@@ -36,12 +38,13 @@ void draw() {
   }
 
   // Extract the touch value from the received message
-  if (eyes.size() < maxEyes) {
-    int touchValue = extractTouchValue(touchMessage);
+  int touchValue = extractTouchValue(touchMessage);
+  int touch2Value = extractTouchValue(touch2_Message);
 
-    if (touchValue < touchThreshold) {
+  if (eyes.size() < maxEyes) {
+    if (touchValue < touchThreshold && touch2Value > touchThreshold) {
       touchTimer++;
-      if (touchTimer >= 3 * 60) { // 3 seconds (assuming 60 frames per second)
+      if (touchTimer >= 3 * 60) { // 3 seconds 
         Eye newEye = null; // Initialize newEye to null
         boolean canAddEye = true;
         while (canAddEye) {
@@ -55,6 +58,19 @@ void draw() {
       touchTimer = 0;
     }
   }
+  
+  if (touch2Value < touchThreshold && touchValue < touchThreshold) {
+    for (Eye eye : eyes) {
+      eye.cryTearsOfBlood();
+    }
+  }
+
+  // Check for eye removal
+  if (frameCount - lastEyeRemovalTime >= eyeRemovalInterval && eyes.size() > 1) {
+    // Remove an eye
+    eyes.remove(0); 
+    lastEyeRemovalTime = frameCount;
+  }
 }
 
 class Eye {
@@ -64,25 +80,27 @@ class Eye {
   float pupilX; // Current pupil X position
   float pupilY; // Current pupil Y position
   float t; // Time for pupil movement
-  
+
   float eyelidTop; // Eyelid top position
   float eyelidBottom; // Eyelid bottom position
-  
+
+  boolean cryingTearsOfBlood = false;
+  int cryStartTime = 0;
+
   Eye(int tx, int ty, int ts) {
     if (eyes.isEmpty()) {
-      // If it's the first eye, place it in the middle of the screen
       x = width / 2;
       y = height / 2;
     } else {
       x = tx;
       y = ty;
     }
-    
+
     size = ts;
     pupilX = random(-size / 6, size / 6); // Random initial pupil position
     pupilY = random(-size / 6, size / 6); // Random initial pupil position
     t = random(TWO_PI); // Random initial time for smooth movement
-    
+
     eyelidTop = size / 4; // Initial eyelid position
     eyelidBottom = size / 4; // Initial eyelid position
   }
@@ -94,8 +112,17 @@ class Eye {
     pupilX = lerp(pupilX, noiseX, 0.05);
     pupilY = lerp(pupilY, noiseY, 0.05);
     t += 0.01;
+
+    if (cryingTearsOfBlood == true) {
+      int cryDuration = 2 * 60; // 2 seconds
+      if (millis() - cryStartTime >= cryDuration) {
+        cryingTearsOfBlood = false;
+      }
+    }
   }
 
+  ArrayList<BloodDrop> bloodDrops = new ArrayList<BloodDrop>();
+  
   void display(int lightValue) {
     pushMatrix();
     translate(x, y);
@@ -105,13 +132,77 @@ class Eye {
     // Eyelid
     fill(100); // Eyelid color
     ellipse(size / 4, 0, size, size / 2); // Draw eyelid
-    
+
     // Calculate pupil size based on light value
     float pupilSize = map(lightValue, 0, 4095, size / 2.7, 0);
     fill(230); // pupil color
     ellipse(size / 4 + pupilX, pupilY, pupilSize, pupilSize); // draw pupil
 
+    if (cryingTearsOfBlood) {
+      // Calculate the number of blood drops based on eye size
+      int numBloodDrops = int(map(size, 50, 250, 5, 15));
+
+      // Simulate blood drops
+      for (int i = 0; i < numBloodDrops; i++) {
+        if (random(1) < 0.1) {
+          float bloodX = random(-size / 7, size / 2); // Random position near the eye
+          float bloodY = size / 10 + size / 8; // Centered below the pupil
+          float bloodSize = map(size, 50, 250, 5, 15); // Size of blood drops proportional to eye size
+          float bloodSpeed = random(1, 3); // Random speed for gravity effect
+
+          BloodDrop bloodDrop = new BloodDrop(bloodX, bloodY, bloodSize, bloodSpeed);
+          bloodDrops.add(bloodDrop);
+        }
+      }
+
+      // Update and display blood drops
+      for (int i = bloodDrops.size() - 1; i >= 0; i--) {
+        BloodDrop drop = bloodDrops.get(i);
+        drop.update();
+        drop.display();
+        if (drop.isOffScreen()) {
+          bloodDrops.remove(i);
+        }
+      }
+    }
+
     popMatrix();
+  }
+
+
+    void cryTearsOfBlood() {
+    cryingTearsOfBlood = true;
+    cryStartTime = millis();
+  }
+}
+
+class BloodDrop {
+  float x, y;
+  float size;
+  float speed;
+
+  BloodDrop(float x, float y, float size, float speed) {
+    this.x = x;
+    this.y = y;
+    this.size = size;
+    this.speed = speed;
+  }
+
+  void update() {
+    y += speed; // Apply gravity
+  }
+
+  void display() {
+    noStroke();
+    fill(255, 0, 0); // Red color for tears of blood
+    beginShape();
+    vertex(x, y);
+    bezierVertex(x - size * 2, y - size * 2, x + size * 2, y - size * 2, x, y); // Tear drop shape
+    endShape(CLOSE);
+  }
+
+  boolean isOffScreen() {
+    return y > height; // Check if the drop has fallen off the screen
   }
 }
 
@@ -124,6 +215,8 @@ void receive(byte[] data, String ip, int port) {
     lightMessage = message;
   } else if (message.startsWith("Touch Value: ")) {
     touchMessage = message;
+  } else if (message.startsWith("Touch#2 Value: ")) {
+    touch2_Message = message;
   }
 }
 
@@ -133,7 +226,7 @@ int extractLightValue(String message) {
   if (parts.length >= 2) {
     return int(parts[1]);
   } else {
-    return 0; // Default value
+    return 0;
   }
 }
 
@@ -143,7 +236,7 @@ int extractTouchValue(String message) {
   if (parts.length >= 2) {
     return int(parts[2]);
   } else {
-    return 0; // Default value
+    return 0;
   }
 }
 

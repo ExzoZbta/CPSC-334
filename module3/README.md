@@ -26,3 +26,12 @@ Overview
   - There is a **photoresistor** coming out of the pupil of the enclosure.
     - The more light it senses, the more the pupil of the eye on the screen shrinks (max value: 4095)
     - The less light it senses, the more the pupil of the eye dilates (min value: 0)
+   
+  - “Element of the “unseen effect:”
+    - One of the ****************touch sensors**************** does not immediately cause anything when the user touches it. The user needs        to keep their finger on the sensor for at least 3 seconds for another eye to spawn.
+        - Newly spawned eyes will typically be of varying size, as long as they can fit within the window. This also means that, eventually,           some of the eyes might be the same size if that is the only way more eyes can fit within the screen.
+        - A maximum of 20 eyes can appear.
+    - Touching **both sensors** results in blood drops flowing out of the eyes until the sensors no longer recognize the user touching both        of them simultaneously
+        - This is not exactly intuitive to the user as touching the 2nd sensor does not cause anything.
+- “Element of the “lack of consequence/control:”
+    - The user can never stop the eyes from staring. The pupils may be manipulated, but, no matter what, their gazes will perpetually remain.

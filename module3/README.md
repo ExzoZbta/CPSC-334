@@ -17,7 +17,7 @@ Overview
        
   - Sensors included:
     - a photoresistor (coming out of the pupil of the enclosure)
-    - 4 touch sensors (out of the left, right, top, bottom of the enclosure)
+    - 2 touch sensors (out of the sid of the enclosure)
    
   Description of 'Onmetaphobia' project
   --------------------------------------

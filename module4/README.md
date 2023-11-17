@@ -24,7 +24,7 @@ Overview
   --------------------------------------
   - Upon running, you are greeted with a blank canvas on your screen
 
-
+Servo Motors
   - The circuit contains a red **button**, which has 3 different states. The user can toggle between each state by alternating between the state numbers 1-3 with each button press (the state numbers are printed for user view to the Processing/Arduino IDE terminal as the program is running):
       - State 1:
           - touching and holding the **touch sensor 1 (**for at least 1 second) starts moving both **servo motors** *clockwise* until the touch sensor is no longer held. This moves the apparatus (upon which the hands are fixed onto) *clockwise*.

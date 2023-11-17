@@ -48,6 +48,7 @@ Overview
       - The y-position is determined by Perlin noise
   - The user can clear the canvas by holding one of the **touch sensors**
       - After a brief delay, a **vibration motor** in the center of the toon eyes will activate
+   
   - **(Extra) Feature richness & some fun value normalization:**
       - The user can adjust the colors of the paint splatters produced on the screen by adjusting the light conditions the system (specifically, the photosensor) is exposed to. The more light that is sensed by the photosensor, the more red the paint splatters will be. The less light (darker values) sensed, the more blue the splatters will be.
       - Perlin noise: While the horizontal (x-axis) values of where the paint splatters appear on the screen is determined by the motor position (normalizing the step-count value), the y values are determined by Perlin noise and are also influenced by the motor step-count values. This produces a smoother transition between the paint splatters—ultimately a more natural/realistic effect as the user interacts with our kinetic sculpture.

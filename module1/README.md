@@ -9,6 +9,41 @@ blobs is a p5.js sketch that creates two animated, colored blobs (referred to as
   - the blobs' colors are generated randomly
   - they will pass through each other
 
+## Creative Process
+
+---
+
+### What makes this generative art (or art generative)?
+
+- I’ve failed to witness a non-unique composition for every single instance of the program.
+- The degree of randomness in the speeds and directions of the blobs.
+- The ever-flowing sinusoidal nature of the blobs’ shapes. A blob should not resemble the other within the same instance.
+- As the blobs bounce around, you will witness patterns forming and disappearing—some minor and rather fleeting, or some that last throughout the travels of the blobs. It is almost as if you are watching the crafting of a quilt in real time.
+- In some instances, the blobs will forever travel upon the same lines/paths and no longer produce any new patterns or shapes. In some other instances, the blobs seemingly create new patterns and shapes until the canvas develops into one large mesh of color. I have not run the program long enough to see this occur.
+
+### Why?
+
+- I like blobs 😀
+- I remember being super antsy when I was younger (I believe I still am). I hated waiting for things—waiting for the time to pass by—as most kids would. To entertain myself, I just watched something. That something would be moving around, or maybe it didn’t so I would imagine it moving around, instead. blobs is a representation of the urge to not sit still, to keep moving and flowing.
+
+## ‘blobs’ In Action
+
+---
+
+- Everything is done in the same ‘sketch.js’ file, including window resizing.
+- It is able to boot full-screen on the Raspberry Pi, as long as it is still alive.
+
+### Challenges
+
+The shape of a blob:
+
+- My idea for this module began with this notion (like the app) of wanting to depict an object in perpetual motion—for instance, the ocean (I think). I came up with a circular object that moved similarly to a water balloon in your hand, but that ended up being boring to watch.
+- I ended up stumbling upon this p5.js example of a soft-body object simulation: https://p5js.org/examples/simulate-soft-body.html. After looking through the code, that’s when I decided to adopt a ‘sinusoidal-flowy nature’ for my blobs.
+
+Collision detection:
+
+- For a while, I couldn't figure out how to get the blobs to properly bounce off the walls. They would either go through the boundaries as if they didn’t exist, or bounce before the distorted appearance visually contacted the wall.
+
 
 Usage - download the module1 folder and double-click on index.html in the installed location
 -----

@@ -1,10 +1,10 @@
 Overview
 --------
-Onmetaphobia is an esp32-Processing-powered installation art relying on user interaction with a photoresistor and 2 touch sensors within an eyeball. The effects of the user interaction, however, are not immediately clear. What happens when the user places a finger on the touch sensor—or does anything happen at all? What happens when the photoresistor takes in too much light, or too little?
+'Onmetaphobia' is an esp32-Processing-powered installation art relying on user interaction with a photoresistor and 2 touch sensors within an eyeball. The effects of the user interaction, however, are not immediately clear. What happens when the user places a finger on the touch sensor—or does anything happen at all? What happens when the photoresistor takes in too much light, or too little?
     - The sensor input data is taken from the ‘[module3-sensor.ino](https://github.com/ExzoZbta/CPSC-334/blob/main/module3/module3-sensor.ino)**’** file
     - The output is displayed by the ‘[onmetaphobia.pde](https://github.com/ExzoZbta/CPSC-334/blob/main/module3/eyes-processing/onmetaphobia.pde)’ file
 
-    Description of 'Onmetaphobia'
+Description of 'Onmetaphobia'
     ------------------------------
     - Upon running, you are greeted with an eye in the center of the screen.
         - The eye is randomly looking around. It might look up at you, straight at you, or beside you. The independent pupil movement is simulated using Perlin noise.
@@ -20,7 +20,7 @@ Onmetaphobia is an esp32-Processing-powered installation art relying on user int
     - “Element of the “lack of consequence/control:”
         - The user can never stop the eyes from staring. The pupils may be manipulated, but, no matter what, their gazes will perpetually remain.
             
-            [See 1st bullet point under ‘Challenges’ for further explanation]
+[See 1st bullet point under ‘Challenges’ for further explanation]
         
 
 ## Creative Process

@@ -1,7 +1,7 @@
 Overview
 --------
 'Emotion Waves' is an esp32-interactive Processing sketch that allows you to express your emotions by using a joystick to fiddle around with a Perlin noise-generated wave. The user can use a button to select the emotion they've most prominently felt recently (out of a small list).
-  - The user input data is taken from the ‘**[esp32-data-module2.ino](https://github.com/ExzoZbta/CPSC-334/blob/main/module2/esp32-data-module2.ino)’** file
+  - The user input data is taken from the ‘**[esp32-data-module2.ino](https://github.com/ExzoZbta/CPSC-334/blob/main/module2/esp32-data-module2.ino)’** file.
 
   Description of 'Emotion Waves'
   ------------------------------
@@ -25,7 +25,7 @@ Overview
 - My mind was still thinking about generative art, so I decided to continue exploring that realm.
 - After spending *****A LOT* of time ********properly******** hooking up the esp32 input data into the Processing sketch (more on this in the ‘Challenges’ section), I decided to completely change my original idea.
     - **My original idea**: allow the user to control the procedural generation of a 3D sculpture. The joystick would control the size and intensity of the generation. There would be certain rules on size/intensity depending on what emotion the user chose.
-    - I slowly (and regrettably) realized that this was taking wayyy too long to figure out. I wanted to take a bite out of my Mac (yes, take a bite) after some intense bouts of frustration
+    - I slowly (and regrettably) realized that this was taking wayyy too long to figure out.
 - I still wanted to go down the generative/procedural path. After some googling on algorithms, and thanks to Darwin for the introduction to Perlin noise, I decided on using Perlin noise to generate something controllable by the user.
     - Decided on a ‘wave-like’ generation…perhaps due to the influence of ‘blobs.’ When I was testing it out, I was quite pleased and very relieved. It seemed to represent **my objective**: to give the user an outlet to play with emotion—to potentially think about the emotion they chose while fiddling around with its representation on a screen.
 
@@ -39,11 +39,11 @@ Overview
 
 Reading in another source of input besides the button:
 
-- I started by reading the values of the button pressing. Pretty simple…until I attempted to read the values of the switch flicking. My initial approach to reading in serial events apparently could only account for one source of serial data at a time. It took me a painful amount of time to determine a solution.
+- I started by reading the values of the button pressing. Pretty simple…until I attempted to read the values of the switch flicking. My initial approach to reading in serial events apparently could only account for one source of serial data at a time.
 
 Reading in the joystick values:
 
-- I technically never really solved my problem since my final idea did not require me to find a solution, but I was trying to figure out a way for the user to draw on the canvas with the joystick. Regardless of what I did, the joystick ‘cursor’ would always return to its default position. For example, if I moved the joystick to x value 100 and y value 2000, the joystick would instantly return to x value 2800 and y value 2800 as soon as I let go of it. I couldn’t work out a solution so I decided to abandon the idea I had for that functionality. I also realized I was using the joystick in the wrong orientation, resulting in my values constantly looking flipped when they were relatively normal.
+- I technically never really solved my problem since my final idea did not require me to find a solution, but I was trying to figure out a way for the user to draw on the canvas with the joystick. Regardless of what I did, the joystick ‘cursor’ would always return to its default position. For example, if I moved the joystick to x value 100 and y value 2000, the joystick would instantly return to x value 2800 and y value 2800 as soon as I let go of it. I couldn’t work out a solution so I decided to abandon the idea I had for that functionality.
 
 —
 
@@ -53,11 +53,11 @@ Reading in the joystick values:
 - The positions of the joystick and the button are slightly angled toward the direction of where the fingers of the right hand would rest…ergonomics or something
     - The lever juts out from the side of the box, intended to be used by the left-hand
  
-  ![IMG-8355.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/386a96bb-f4fe-40e0-87d0-68ee4e7a7a06/55720341-7995-440a-b5f0-f0198cb6c3ac/IMG-8355.jpg)
+  ![Front image of enclosure](https://i.imgur.com/BFWQ2vY.jpg)
 
-  ![IMG-8357.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/386a96bb-f4fe-40e0-87d0-68ee4e7a7a06/ba6a9ef0-f580-469e-8d29-1f417ff08c00/IMG-8357.jpg)
+  ![Top image of enclosure](https://i.imgur.com/TLBvFaR.jpg)
 
-  ![IMG-8231.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/386a96bb-f4fe-40e0-87d0-68ee4e7a7a06/aefa4489-4edb-4ac3-8df0-4296f760f6fb/IMG-8231.jpg)
+  ![Image of circuitry](https://i.imgur.com/SDgusv7.jpg)
 
 ## esp32 Usage:
 

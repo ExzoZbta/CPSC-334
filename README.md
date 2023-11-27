@@ -1,6 +1,6 @@
 # CPSC-334: Creative Embedded Systems
 
-Module 1: Generative Art - blobs
+[Module 1: Generative Art - blobs](https://github.com/ExzoZbta/CPSC-334/tree/main/module1)
 ------------------------
   - Lab 1
   - Lab 2
@@ -21,15 +21,15 @@ Module 1: Generative Art - blobs
         - This video demonstrates what happens when the window is constantly being resized. The blobs constantly relocate in an attempt to stay within the boundaries of the window. While doing so, the blobs’ lines on the canvas restart until resizing     ceases. The lines would be cut off and ultimately disrupt the final composition if it weren’t for covering this edge case.
         - Also displays the difference in composition in a resized window.
 
-Module 2: Interactive Devices - Emotion Waves
+[Module 2: Interactive Devices - Emotion Waves](https://github.com/ExzoZbta/CPSC-334/tree/main/module2)
 -----------------------------
   - Lab 3
   - Lab 4
 
-Module 3: Installation Art - Onmetaphobia
+[Module 3: Installation Art - Onmetaphobia](https://github.com/ExzoZbta/CPSC-334/tree/main/module3)
 --------------------------
   - Lab 6
 
-Module 4: Kinetic Sculpture - The Toonish Dauber
+[Module 4: Kinetic Sculpture - The Toonish Dauber](https://github.com/ExzoZbta/CPSC-334/tree/main/module4)
 ---------------------------
   - Lab 7

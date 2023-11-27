@@ -1,17 +1,63 @@
 Overview
 --------
 'Emotion Waves' is an esp32-interactive Processing sketch that allows you to express your emotions by using a joystick to fiddle around with a Perlin noise-generated wave. The user can use a button to select the emotion they've most prominently felt recently (out of a small list).
+  - The user input data is taken from the ‘**[esp32-data-module2.ino](https://github.com/ExzoZbta/CPSC-334/blob/main/module2/esp32-data-module2.ino)’** file
 
   Description of 'Emotion Waves'
   ------------------------------
-  - The user is greeted with a screen asking "Select the most prominent emotion you've felt recently."
-  - The list of emotions includes: "Sadness" "Joy" "Anger" "Surprise"
-    - each emotion has its corresponding color
-  - When the user is satisfied with their choice, flicking the lever on brings up a screen with the appropriately colored Perlin noise-generated wave on a black background.
-  - On this screen, the user can manipulate the wave using the joystick. The wave moves on its own without user input.
-  - The wave moves on its own without user input.    
-  - The user can return to the starting screen and start anew by flicking the lever off.
+  - Upon running, you are greeted with a screen asking "Select the most prominent emotion you've felt recently."
+  - Inside a colored box, lists a particular emotion: "Sadness" "Joy" "Anger" "Surprise"
+    - Each emotion has its corresponding color (from blue → yellow → red → orange. The box accompanying the emotion also has the same color.
+    - The user can navigate through the list by pressing the **button**.
+  - When you have decided on the emotion, you can flick the **lever** on to bring up a screen with the appropriately colored Perlin noise-generated wave on a black background.
+  - On this screen, the user can manipulate the x-dimensions and y-dimensions of the Perlin noise-generated wave using the **joystick**. The behavior of the manipulation of the wave differs depending on which emotion was selected.
+    - The wave moves slightly on its own without user input.
+  - The user can return to the starting screen and start anew by flicking the **lever** off.
+    - Note: returning to the screen is unnecessary—you can use the button to change the emotion while on the wave screen.
 
+## Creative Process
+
+---
+
+### Why?
+
+- At first, I didn’t know what I wanted to do, at all. I wanted to make a fart sound generator box, but then (thanks to Scott) I realized that project seems more suited to the wireless module.
+- My mind was still thinking about generative art, so I decided to continue exploring that realm.
+- After spending *****A LOT* of time ********properly******** hooking up the esp32 input data into the Processing sketch (more on this in the ‘Challenges’ section), I decided to completely change my original idea.
+    - **My original idea**: allow the user to control the procedural generation of a 3D sculpture. The joystick would control the size and intensity of the generation. There would be certain rules on size/intensity depending on what emotion the user chose.
+    - I slowly (and regrettably) realized that this was taking wayyy too long to figure out. I wanted to take a bite out of my Mac (yes, take a bite) after some intense bouts of frustration
+- I still wanted to go down the generative/procedural path. After some googling on algorithms, and thanks to Darwin for the introduction to Perlin noise, I decided on using Perlin noise to generate something controllable by the user.
+    - Decided on a ‘wave-like’ generation…perhaps due to the influence of ‘blobs.’ When I was testing it out, I was quite pleased and very relieved. It seemed to represent **my objective**: to give the user an outlet to play with emotion—to potentially think about the emotion they chose while fiddling around with its representation on a screen.
+
+## ‘🌊 Emotion Waves 🌊’ In Action
+
+---
+
+- The project consists of 2 files: **[module2.pde](https://github.com/ExzoZbta/CPSC-334/blob/main/module2/module2.pde)** (the Processing sketch) + **[esp32-data-module2.ino](https://github.com/ExzoZbta/CPSC-334/blob/main/module2/esp32-data-module2.ino)** (the esp32 data uploader)
+
+### Challenges
+
+Reading in another source of input besides the button:
+
+- I started by reading the values of the button pressing. Pretty simple…until I attempted to read the values of the switch flicking. My initial approach to reading in serial events apparently could only account for one source of serial data at a time. It took me a painful amount of time to determine a solution.
+
+Reading in the joystick values:
+
+- I technically never really solved my problem since my final idea did not require me to find a solution, but I was trying to figure out a way for the user to draw on the canvas with the joystick. Regardless of what I did, the joystick ‘cursor’ would always return to its default position. For example, if I moved the joystick to x value 100 and y value 2000, the joystick would instantly return to x value 2800 and y value 2800 as soon as I let go of it. I couldn’t work out a solution so I decided to abandon the idea I had for that functionality. I also realized I was using the joystick in the wrong orientation, resulting in my values constantly looking flipped when they were relatively normal.
+
+—
+
+### Enclosure:
+
+- A cardboard box with a flap for the top (for easy removal of the esp32 + circuit)
+- The positions of the joystick and the button are slightly angled toward the direction of where the fingers of the right hand would rest…ergonomics or something
+    - The lever juts out from the side of the box, intended to be used by the left-hand
+ 
+  ![IMG-8355.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/386a96bb-f4fe-40e0-87d0-68ee4e7a7a06/55720341-7995-440a-b5f0-f0198cb6c3ac/IMG-8355.jpg)
+
+  ![IMG-8357.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/386a96bb-f4fe-40e0-87d0-68ee4e7a7a06/ba6a9ef0-f580-469e-8d29-1f417ff08c00/IMG-8357.jpg)
+
+  ![IMG-8231.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/386a96bb-f4fe-40e0-87d0-68ee4e7a7a06/aefa4489-4edb-4ac3-8df0-4296f760f6fb/IMG-8231.jpg)
 
 ## esp32 Usage:
 
@@ -37,7 +83,3 @@ Overview
               - The user can hold down the button to quickly go through the list (just a possibility)
               - On the Perlin noise-generated wave screen, pressing the button can change the emotion 
               (thus, the color of the wave) without having to go back to the emotion screen 
- 
-For Raspberry Pi:
-- 
-

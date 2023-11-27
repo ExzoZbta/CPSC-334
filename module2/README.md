@@ -3,17 +3,17 @@ Overview
 'Emotion Waves' is an esp32-interactive Processing sketch that allows you to express your emotions by using a joystick to fiddle around with a Perlin noise-generated wave. The user can use a button to select the emotion they've most prominently felt recently (out of a small list).
   - The user input data is taken from the ‘**[esp32-data-module2.ino](https://github.com/ExzoZbta/CPSC-334/blob/main/module2/esp32-data-module2.ino)’** file.
 
-  Description of 'Emotion Waves'
-  ------------------------------
-  - Upon running, you are greeted with a screen asking "Select the most prominent emotion you've felt recently."
-  - Inside a colored box, lists a particular emotion: "Sadness" "Joy" "Anger" "Surprise"
-    - Each emotion has its corresponding color (from blue → yellow → red → orange. The box accompanying the emotion also has the same color.
-    - The user can navigate through the list by pressing the **button**.
-  - When you have decided on the emotion, you can flick the **lever** on to bring up a screen with the appropriately colored Perlin noise-generated wave on a black background.
-  - On this screen, the user can manipulate the x-dimensions and y-dimensions of the Perlin noise-generated wave using the **joystick**. The behavior of the manipulation of the wave differs depending on which emotion was selected.
-    - The wave moves slightly on its own without user input.
-  - The user can return to the starting screen and start anew by flicking the **lever** off.
-    - Note: returning to the screen is unnecessary—you can use the button to change the emotion while on the wave screen.
+    Description of 'Emotion Waves'
+    ------------------------------
+    - Upon running, you are greeted with a screen asking "Select the most prominent emotion you've felt recently."
+    - Inside a colored box, lists a particular emotion: "Sadness" "Joy" "Anger" "Surprise"
+      - Each emotion has its corresponding color (from blue → yellow → red → orange. The box accompanying the emotion also has the same color.
+      - The user can navigate through the list by pressing the **button**.
+    - When you have decided on the emotion, you can flick the **lever** on to bring up a screen with the appropriately colored Perlin noise-generated wave on a black background.
+    - On this screen, the user can manipulate the x-dimensions and y-dimensions of the Perlin noise-generated wave using the **joystick**. The behavior of the manipulation of the wave differs depending on which emotion was selected.
+      - The wave moves slightly on its own without user input.
+    - The user can return to the starting screen and start anew by flicking the **lever** off.
+      - Note: returning to the screen is unnecessary—you can use the button to change the emotion while on the wave screen.
 
 ## Creative Process
 

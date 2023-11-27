@@ -1,6 +1,6 @@
 Overview
 --------
-- an esp32-Processing-powered installation art relying on user interaction with a photoresistor and 2 touch sensors within an eyeball. The effects of the user interaction, however, are not immediately clear. What happens when the user places a finger on the touch sensor—or does anything happen at all? What happens when the photoresistor takes in too much light, or too little?
+Onmetaphobia is an esp32-Processing-powered installation art relying on user interaction with a photoresistor and 2 touch sensors within an eyeball. The effects of the user interaction, however, are not immediately clear. What happens when the user places a finger on the touch sensor—or does anything happen at all? What happens when the photoresistor takes in too much light, or too little?
     - The sensor input data is taken from the ‘[module3-sensor.ino](https://github.com/ExzoZbta/CPSC-334/blob/main/module3/module3-sensor.ino)**’** file
     - The output is displayed by the ‘[onmetaphobia.pde](https://github.com/ExzoZbta/CPSC-334/blob/main/module3/eyes-processing/onmetaphobia.pde)’ file
 

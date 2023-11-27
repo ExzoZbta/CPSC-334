@@ -26,7 +26,31 @@
 -----------------------------
   - Lab 3
   - Lab 4
+  - Demonstrations for the 'Emotion Waves' module 2 project (clickable thumbnails):
+    - Physical demonstration:
+    [![Physical Demo for "Emotion Waves" -- CPSC334 Module 2](https://img.youtube.com/vi/ahN_w0zfzpI/maxresdefault.jpg)](https://www.youtube.com/watch?v=ahN_w0zfzpI)
+        - Using only the right hand for obvious reasons, so not an entirely accurate depiction of how someone would operate it with 2 hands.
 
+    - 'Sadness' demonstration:
+    [![Sadness Demo for "Emotion Waves" -- CPSC334 Module 2](https://img.youtube.com/vi/HfrCNFwq370/maxresdefault.jpg)](https://www.youtube.com/watch?v=HfrCNFwq370)
+        - Gentle manipulation.
+        - No impact on noise of x dimension | very low impact on noise of y dimension.
+
+    - 'Joy' demonstration:
+    [![Joy Demo for "Emotion Waves" -- CPSC334 Module 2](https://img.youtube.com/vi/u6DNXJ3HYAU/maxresdefault.jpg)](https://www.youtube.com/watch?v=u6DNXJ3HYAU)
+        - Soft manipulation.
+        - Low impact on noise of x and y dimensions.
+      
+    - 'Surprise' demonstration:
+    [![Surprise Demo for "Emotion Waves" -- CPSC334 Module 2](https://img.youtube.com/vi/Mz2oj-6Sr74/maxresdefault.jpg)](https://www.youtube.com/watch?v=Mz2oj-6Sr74)
+          - Severe manipulation.
+          - Very low impact on noise of x dimension | very high impact on y dimension.
+
+    - 'Anger' demonstration:
+    [![Anger Demo for "Emotion Waves" -- CPSC334 Module 2](https://img.youtube.com/vi/872PlHEifh4/maxresdefault.jpg)](https://www.youtube.com/watch?v=872PlHEifh4)
+        - Extreme manipulation.
+        - Very high impact on noise of x dimension | high impact on y dimension.
+      
 [Module 3: Installation Art - Onmetaphobia](https://github.com/ExzoZbta/CPSC-334/tree/main/module3)
 --------------------------
   - Lab 6

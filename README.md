@@ -1,4 +1,4 @@
-**CPSC-334: Creative Embedded Systems
+## CPSC-334: Creative Embedded Systems
 ---
 
 [Module 1: Generative Art - blobs](https://github.com/ExzoZbta/CPSC-334/tree/main/module1)

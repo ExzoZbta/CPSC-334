@@ -3,8 +3,8 @@
 
 [Module 1: Generative Art - blobs](https://github.com/ExzoZbta/CPSC-334/tree/main/module1)
 ------------------------
-  - Lab 1
-  - Lab 2
+  - Lab 1 (in lab-notes)
+  - Lab 2 (in lab-notes)
   - Demonstrations for the 'blobs' module 1 project (clickable thumbnails):
     - Composition 1:
     [![composition 1 for "blobs" -- CPSC334 Module 1](https://img.youtube.com/vi/1vs9fKE3NdU/maxresdefault.jpg)](https://www.youtube.com/watch?v=1vs9fKE3NdU)

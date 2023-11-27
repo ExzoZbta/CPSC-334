@@ -1,6 +1,7 @@
 Overview
 --------
 'The Toonish Dauber' is an esp32-Processing-powered piece of interactive kinetic art relying on user interaction with a multi-state button, a photoresistor, and 2 touch sensors.
+  - In collaboration with Lucy Sun (https://github.com/lucysun118/cpsc334)
 
   Specs of 'The Toonish Dauber' project
   ------------------------------
@@ -57,3 +58,54 @@ Overview
   - **(Extra) Feature richness & some fun value normalization:**
       - The user can adjust the colors of the paint splatters produced on the screen by adjusting the light conditions the system (specifically, the photosensor) is exposed to. The more light that is sensed by the photosensor, the more red the paint splatters will be. The less light (darker values) sensed, the more blue the splatters will be.
       - Perlin noise: While the horizontal (x-axis) values of where the paint splatters appear on the screen is determined by the motor position (normalizing the step-count value), the y values are determined by Perlin noise and are also influenced by the motor step-count values. This produces a smoother transition between the paint splatters—ultimately a more natural/realistic effect as the user interacts with our kinetic sculpture.
+
+  ## Creative Process
+
+---
+
+### Why?
+
+- We wanted something on the more ‘artsy’ side while still being thoroughly interactive.
+    - Because of this, it took a while to figure out the theme/concept of our project which has to involve at least 4 motors.
+- We settled on the ‘Toonish Dauber’ after deliberating over the idea of illustrating paint splatter and immersing the user in the act of creating paint splatter.
+    - Richard: the ‘Toonish’ theme derived from a video game published in 2010, called ‘Epic Mickey.’ In this game, you play as Mickey Mouse wielding a paintbrush in an action-adventure platformer.
+
+### Feature Richness
+
+- We chose to emphasize the user experience by implementing many different ways (photoresistor, touch sensor, multi-state button) the user has to interact with the ‘Toonish Dauber.’
+    - The 3 aforementioned methods of interaction also include more depth in terms of features.
+        - This is based on:
+            - Time, as in how long the user interacts with a given part.
+            - When the user interacts with a given part, as in what particular state according to the button.
+
+### Challenges
+
+1. Richard + Lucy: Implementing the stepper motor:
+    - We struggled a lot in deriving some reason for including a stepper motor. We wanted a practical application, but one that would be exciting to experience for the user. The stepper just didn’t really seem to fit in the whole theme of the project that well, at first. After deliberating over how we wanted the paint splatter to appear on the canvas, as we didn’t want it to be completely random, that’s when we determined that the stepper motor could manipulate the positions of the splats.
+        - The first application involved using 2 stepper motors pulling copper wire between each other, and that wire would pull the enclosure with it (back and forth). The positioning of the steppers’ rotations at a given moment would determine where a paint splatter would occur on the x-axis. We concluded this felt like a whole other project.
+
+1. Richard: Implementing the servo motors:
+    - The clapping motion itself was quite straightforward. Our struggle with the server motors was due to an attempt to demonstrate ‘wider claps’ and ‘narrow claps.’ The 2nd servo motor seemingly never wanted to move in the opposite direction of the 1st servo motor.
+    - We also struggled with building a solid base for the toon hands to move on. Lots of different types of glue and methods of adhesive were used.
+
+1. Lucy: Mapping the colors onto the range of RGB values between red (high light values received from the photosensor) and blue (low light values).
+    - One of the most important challenges in transferring photoresistor values to RGB for comprehensible representation was color normalization.
+        - It took rigorous calibration for us to visually associate warmth with high light values and coolness with low light values in order to achieve a smooth transition from red to blue. Accompanying paint splatters necessitated coordinated x- and y-positioning modifications.
+    - We addressed this problem/proposed feature by implementing a mapping formula/algorithm that was repeatedly evaluated for user perception.
+        - Our ‘Toonish Dauber’s’ actions, surrounding light, and ensuing paint splatters were all visually engagingly correlated thanks to dynamic color shifts and precise coordinate calibration. We wanted to focus on creating an overall aesthetically beautiful and intuitive user experience!
+
+## ‘The Toonish Dauber’ In Action
+
+---
+
+### Enclosure:
+
+  ![Front image of enclosure](https://i.imgur.com/tPqE8fV.jpg)
+
+  ![Top image of enclosure](https://i.imgur.com/BX4UONe.jpg)
+
+  ![Side image of enclosure](https://i.imgur.com/5U1UASA.jpg)
+
+  ![Image of circuitry](https://i.imgur.com/uvjtgcr.jpg)
+
+  ![Image of circuitry](https://i.imgur.com/JKG6jgK.jpg)

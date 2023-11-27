@@ -38,11 +38,9 @@
     [See the 1st bullet point under ‘Challenges’ below, for an explanation of how this project came about]
     
 
-## ‘Onmetaphobia’ In Action
+‘Onmetaphobia’ In Action
 
 ---
-
-- The project consists of a .ino file and a Processing folder containing 2 files:
 
 ### Challenges
 

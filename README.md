@@ -1,7 +1,7 @@
 ## CPSC-334: Creative Embedded Systems
 ---
 
-[Module 1: Generative Art - blobs](https://github.com/ExzoZbta/CPSC-334/tree/main/module1)
+[Module 1: Generative Art - 'blobs'](https://github.com/ExzoZbta/CPSC-334/tree/main/module1)
 ------------------------
   - Lab 1 (in lab-notes)
   - Lab 2 (in lab-notes)
@@ -22,7 +22,7 @@
         - This video demonstrates what happens when the window is constantly being resized. The blobs constantly relocate in an attempt to stay within the boundaries of the window. While doing so, the blobs’ lines on the canvas restart until resizing     ceases. The lines would be cut off and ultimately disrupt the final composition if it weren’t for covering this edge case.
         - Also displays the difference in composition in a resized window.
 
-[Module 2: Interactive Devices - Emotion Waves](https://github.com/ExzoZbta/CPSC-334/tree/main/module2)
+[Module 2: Interactive Devices - 'Emotion Waves'](https://github.com/ExzoZbta/CPSC-334/tree/main/module2)
 -----------------------------
   - Lab 3
   - Lab 4
@@ -51,10 +51,30 @@
         - Extreme manipulation.
         - Very high impact on noise of x dimension | high impact on y dimension.
       
-[Module 3: Installation Art - Onmetaphobia](https://github.com/ExzoZbta/CPSC-334/tree/main/module3)
+[Module 3: Installation Art - 'Onmetaphobia'](https://github.com/ExzoZbta/CPSC-334/tree/main/module3)
 --------------------------
   - Lab 6
+  - Demonstrations for the 'Onmetaphobia' module 3 project (clickable thumbnails):
+    - Physical demonstration:
+    [![Physical Demo for "Onmetaphobia" -- CPSC334 Module 3](https://img.youtube.com/vi/-3RK7U4mY64/maxresdefault.jpg)](https://www.youtube.com/watch?v=-3RK7U4mY64)
+        - The pupils’ shrinking/dilating feature is more obvious when moving around with the eye object into different spaces with varying lighting
+        - This demo does not include me walking around with the object as I wanted to focus on interacting with the sensors and demonstrating the results
 
-[Module 4: Kinetic Sculpture - The Toonish Dauber](https://github.com/ExzoZbta/CPSC-334/tree/main/module4)
+    - Processing sketch demonstration:
+    [!["Onmetaphobia" -- CPSC334 Module 3](https://img.youtube.com/vi/8ACod5ZTtjQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=8ACod5ZTtjQ) 
+
+[Module 4: Kinetic Sculpture - 'The Toonish Dauber'](https://github.com/ExzoZbta/CPSC-334/tree/main/module4)
 ---------------------------
   - Lab 7
+  - Demonstrations for the 'The Toonish Dauber' module 4 project (clickable thumbnails):
+    - Physical demonstration:
+    [!['The Toonish Dauber' -- CPSC334 Module 4](https://img.youtube.com/vi/ifN4IVMK4rc/maxresdefault.jpg)](https://www.youtube.com/watch?v=ifN4IVMK4rc)
+        - Full demonstration of ‘The Toonish Dauber’ (excluding the canvas clearing feature)
+
+    - Hand movement demonstration:
+    [![Movement Demo for "The Toonish Dauber" - CPSC334 Module 4](https://img.youtube.com/vi/pnXDkvyk4qg/maxresdefault.jpg)](https://www.youtube.com/watch?v=pnXDkvyk4qg)
+        - Demonstration focusing on the movement of the toon hands connected to the servo motors.
+
+    - Canvas clearing demonstration:
+    [![Canvas Clearing Demo for "The Toonish Dauber" - CPSC334 Module 4](https://img.youtube.com/vi/gvgFYThdZkE/maxresdefault.jpg)](https://www.youtube.com/watch?v=gvgFYThdZkE)
+        - The user must use a touch sensor that activates a vibration motor, immediately clearing the canvas of paint.

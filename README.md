@@ -5,7 +5,7 @@ Module 1: Generative Art - blobs
   - Lab 1
   - Lab 2
   - blobs:
-    [![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+    [![composition 1 for "blobs" -- CPSC334 Module 1](https://imgur.com/a/vwSdvuO)](https://www.youtube.com/watch?v=1vs9fKE3NdU)
 
 Module 2: Interactive Devices - Emotion Waves
 -----------------------------

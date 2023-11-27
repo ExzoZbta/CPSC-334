@@ -4,8 +4,9 @@ Module 1: Generative Art - blobs
 ------------------------
   - Lab 1
   - Lab 2
-  - blobs:
-    [![composition 1 for "blobs" -- CPSC334 Module 1](https://imgur.com/a/vwSdvuO)](https://www.youtube.com/watch?v=1vs9fKE3NdU)
+  - Demonstrations for the 'blobs' module 1 project:
+    
+    [![composition 1 for "blobs" -- CPSC334 Module 1](https://img.youtube.com/vi/1vs9fKE3NdU/0.jpg)](https://www.youtube.com/watch?v=1vs9fKE3NdU)
 
 Module 2: Interactive Devices - Emotion Waves
 -----------------------------

@@ -1,30 +1,26 @@
-## Overview
-
----
-
+Overview
+--------
 - an esp32-Processing-powered installation art relying on user interaction with a photoresistor and 2 touch sensors within an eyeball. The effects of the user interaction, however, are not immediately clear. What happens when the user places a finger on the touch sensor—or does anything happen at all? What happens when the photoresistor takes in too much light, or too little?
     - The sensor input data is taken from the ‘[module3-sensor.ino](https://github.com/ExzoZbta/CPSC-334/blob/main/module3/module3-sensor.ino)**’** file
     - The output is displayed by the ‘[onmetaphobia.pde](https://github.com/ExzoZbta/CPSC-334/blob/main/module3/eyes-processing/onmetaphobia.pde)’ file
 
-## Description
-
----
-
-- Upon running, you are greeted with an eye in the center of the screen.
-    - The eye is randomly looking around. It might look up at you, straight at you, or beside you. The independent pupil movement is simulated using Perlin noise.
-- There is a **photoresistor** within the pupil of the enclosure.
-    - The more light it senses, the more the pupil of an eye on the screen shrinks (max 4095).
-    - The less light it senses, the more the pupil of an eye dilates (min 0).
-- “Element of the “unseen effect:”
-    - One of the ****************touch sensors**************** does not immediately cause anything when the user touches it. The user needs to keep their finger on the sensor for at least 3 seconds for another eye to spawn.
-        - Newly spawned eyes will typically be of varying size, as long as they can fit within the window. This also means that, eventually, some of the eyes might be the same size if that is the only way more eyes can fit within the screen.
-        - A maximum of 20 eyes can appear.
-    - Touching **both sensors** results in blood drops flowing out of the eyes until the sensors no longer recognize the user touching both of them simultaneously
-        - This is not exactly intuitive to the user as touching the 2nd sensor does not cause anything.
-- “Element of the “lack of consequence/control:”
-    - The user can never stop the eyes from staring. The pupils may be manipulated, but, no matter what, their gazes will perpetually remain.
-        
-        [See 1st bullet point under ‘Challenges’ for further explanation]
+    Description of 'Onmetaphobia'
+    ------------------------------
+    - Upon running, you are greeted with an eye in the center of the screen.
+        - The eye is randomly looking around. It might look up at you, straight at you, or beside you. The independent pupil movement is simulated using Perlin noise.
+    - There is a **photoresistor** within the pupil of the enclosure.
+        - The more light it senses, the more the pupil of an eye on the screen shrinks (max 4095).
+        - The less light it senses, the more the pupil of an eye dilates (min 0).
+    - “Element of the “unseen effect:”
+        - One of the ****************touch sensors**************** does not immediately cause anything when the user touches it. The user needs to keep their finger on the sensor for at least 3 seconds for another eye to spawn.
+            - Newly spawned eyes will typically be of varying size, as long as they can fit within the window. This also means that, eventually, some of the eyes might be the same size if that is the only way more eyes can fit within the screen.
+            - A maximum of 20 eyes can appear.
+        - Touching **both sensors** results in blood drops flowing out of the eyes until the sensors no longer recognize the user touching both of them simultaneously
+            - This is not exactly intuitive to the user as touching the 2nd sensor does not cause anything.
+    - “Element of the “lack of consequence/control:”
+        - The user can never stop the eyes from staring. The pupils may be manipulated, but, no matter what, their gazes will perpetually remain.
+            
+            [See 1st bullet point under ‘Challenges’ for further explanation]
         
 
 ## Creative Process
@@ -38,7 +34,7 @@
     [See the 1st bullet point under ‘Challenges’ below, for an explanation of how this project came about]
     
 
-‘Onmetaphobia’ In Action
+## ‘Onmetaphobia’ In Action
 
 ---
 

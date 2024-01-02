@@ -81,7 +81,7 @@
 
   [Module 5: Final Project - 'Emotion Synthesizer'](https://github.com/lucysun118/laughing-octo-fiesta)
 ---------------------------
-This final project was in collaboration with Lucy Sun.
+This final project was in collaboration with **[Lucy Sun](https://github.com/lucysun118).**
 
   - Demonstrations for the 'Emotion Synthesizer' final project (clickable thumbnails):
     - Servo motor demonstration:

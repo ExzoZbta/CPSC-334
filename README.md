@@ -97,7 +97,7 @@ This final project was in collaboration with Lucy Sun.
     [![Composition #2 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/S4wG4ANqTrU/maxresdefault.jpg)](https://www.youtube.com/watch?v=S4wG4ANqTrU)
 
     - “10” Uplifting Composition demo:
-    [!["10" Uplifting Demo for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/EV0NWiKQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=EV0NWiKQ)
+    [!["10" Uplifting Demo for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/tr1EV0NWiKQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=tr1EV0NWiKQ)
         - When the LED is red, the abstract emotion “uplifting” is applied to the melody composition.
           - This is based on the column positions from the 1st video.
     
@@ -112,10 +112,10 @@ This final project was in collaboration with Lucy Sun.
     [![Composition #5 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/ksxvjKrQ0KM/maxresdefault.jpg)](https://www.youtube.com/watch?v=ksxvjKrQ0KM)
 
     - Generated Composition #6:
-    [![Composition #6 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/Yvki-JaK_R8/maxresdefault.jpg)](https://www.youtube.com/watch?v=Yvki-JaK_R8)
+    [![Composition #6 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/hmN5y_R4vVs/maxresdefault.jpg)](https://www.youtube.com/watch?v=hmN5y_R4vVs)
 
     - Generated Composition #7:
-    [![Composition #7 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/Yvki-JaK_R8/maxresdefault.jpg)](https://www.youtube.com/watch?v=Yvki-JaK_R8)
+    [![Composition #7 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/eb7tLErFxuA/maxresdefault.jpg)](https://www.youtube.com/watch?v=eb7tLErFxuA)
 
     - Second “10” Uplifting Composition demo:
     [!["10" Uplifting Demo for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/lyJIhrIBKFw/maxresdefault.jpg)](https://www.youtube.com/watch?v=lyJIhrIBKFw)
@@ -129,4 +129,4 @@ This final project was in collaboration with Lucy Sun.
     [![Composition #9 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/Sta7g4CqoMc/maxresdefault.jpg)](https://www.youtube.com/watch?v=Sta7g4CqoMc)
 
     - Generated Composition #10:
-    [![Composition #10 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/Yvki-JaK_R8/maxresdefault.jpg)](https://www.youtube.com/watch?v=Yvki-JaK_R8)
+    [![Composition #10 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/UqY7372h3NQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=UqY7372h3NQ)

@@ -78,3 +78,55 @@
     - Canvas clearing demonstration:
     [![Canvas Clearing Demo for "The Toonish Dauber" - CPSC334 Module 4](https://img.youtube.com/vi/gvgFYThdZkE/maxresdefault.jpg)](https://www.youtube.com/watch?v=gvgFYThdZkE)
         - The user must use a touch sensor that activates a vibration motor, immediately clearing the canvas of paint.
+
+  [Module 5: Final Project - 'Emotion Synthesizer'](https://github.com/lucysun118/laughing-octo-fiesta)
+---------------------------
+This final project was in collaboration with Lucy Sun.
+
+  - Demonstrations for the 'Emotion Synthesizer' final project (clickable thumbnails):
+    - Servo motor demonstration:
+    [![Motor Demo for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/lwBnZPBCjKQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=lwBnZPBCjKQ)
+        - Demonstrates the movement of the wooden columns from servos #1 - #6
+
+    - Generated Composition #1:
+    [![Composition #1 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/Qbv0-CsfGao/maxresdefault.jpg)](https://www.youtube.com/watch?v=Qbv0-CsfGao)
+        - Demonstrates the 1st generated composition based on the position of the columns from the 1st video.
+        - This is also when the LED is off—meaning there is no presence of the abstract emotion, “uplifting,” in the generation process.
+
+    - Generated Composition #2:
+    [![Composition #2 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/S4wG4ANqTrU/maxresdefault.jpg)](https://www.youtube.com/watch?v=S4wG4ANqTrU)
+
+    - “10” Uplifting Composition demo:
+    [!["10" Uplifting Demo for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/EV0NWiKQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=EV0NWiKQ)
+        - When the LED is red, the abstract emotion “uplifting” is applied to the melody composition.
+          - This is based on the column positions from the 1st video.
+    
+    - Generated Composition #3:
+    [![Composition #3 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/4TIy7L7TdTU/maxresdefault.jpg)](https://www.youtube.com/watch?v=4TIy7L7TdTU)
+        - This is based on the “10” Uplifting Composition video.
+
+    - Generated Composition #4:
+    [![Composition #4 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/Yvki-JaK_R8/maxresdefault.jpg)](https://www.youtube.com/watch?v=Yvki-JaK_R8)
+
+    - Generated Composition #5:
+    [![Composition #5 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/ksxvjKrQ0KM/maxresdefault.jpg)](https://www.youtube.com/watch?v=ksxvjKrQ0KM)
+
+    - Generated Composition #6:
+    [![Composition #6 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/Yvki-JaK_R8/maxresdefault.jpg)](https://www.youtube.com/watch?v=Yvki-JaK_R8)
+
+    - Generated Composition #7:
+    [![Composition #7 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/Yvki-JaK_R8/maxresdefault.jpg)](https://www.youtube.com/watch?v=Yvki-JaK_R8)
+
+    - Second “10” Uplifting Composition demo:
+    [!["10" Uplifting Demo for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/lyJIhrIBKFw/maxresdefault.jpg)](https://www.youtube.com/watch?v=lyJIhrIBKFw)
+
+    - Generated Composition #8:
+    [![Composition #8 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/1HeniqacMDo/maxresdefault.jpg)](https://www.youtube.com/watch?v=1HeniqacMDo)
+        - Comically long composition (we cut the recording short)
+        - Based on the Second “10” Uplifting Composition
+
+    - Generated Composition #9:
+    [![Composition #9 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/Sta7g4CqoMc/maxresdefault.jpg)](https://www.youtube.com/watch?v=Sta7g4CqoMc)
+
+    - Generated Composition #10:
+    [![Composition #10 for 'Emotion Synthesizer' - CPSC334 Final Project](https://img.youtube.com/vi/Yvki-JaK_R8/maxresdefault.jpg)](https://www.youtube.com/watch?v=Yvki-JaK_R8)
